@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Run a one-line script
-        run: echo "${{ matrix.<property_name> }}
+        run: echo "${{ toJSON(matrix) }}
