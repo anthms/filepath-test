@@ -1,0 +1,13 @@
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        team: [v1,v2,v3]
+
+    steps:
+      - name: Run a one-line script
+        run: echo "${{ matrix.<property_name> }}
